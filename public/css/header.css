@@ -1,0 +1,59 @@
+#profielAfbeeldingHeader {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+#profielAfbeelding {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 15px;
+}
+
+#bewerkImage {
+    height: 20px;
+    width: 20px;
+}
+
+#prullenbak {
+    height: 20px;
+    width: 20px;
+}
+
+#reactieProfielfoto {
+    height: 42px;
+    width: 42px;
+    margin-bottom: 15px;
+}
+
+#gebruikersnaam {
+    margin-bottom: 0;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+#reactieTekst {
+    word-wrap: break-word;
+}
+
+#winkelwagen {
+    height: 50px;
+    width: 50px;
+}
+
+#iconCartCount {
+    color: white;
+    position: absolute;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: normal;
+    padding: 1px 4px;
+    min-width: 1rem;
+    text-align: center;
+    transition: border .25s ease-out;
+    background-color: #E52320;
+}
+
+.nav-link {
+    margin-top: 10px;
+}

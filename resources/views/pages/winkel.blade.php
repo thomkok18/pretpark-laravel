@@ -9,7 +9,7 @@
     @if(count($producten) > 0)
         @foreach($producten as $product)
             @if($product->getCartByProductId($product->id) == 0)
-                <form class="form-horizontal" method="post" action="{{url('/product/'.$product->id.'/store/winkel')}}">
+                <form class="form-horizontal" method="post" action="{{url('/product/'.$product->id.'/store/winkel')}}"></form>
             @else
                 <form class="form-horizontal" method="post" action="{{url('/product/'.$product->getCartIdByProductUserId($product->id, auth()->user()->id).'/update/winkel')}}">
             @endif

@@ -14,6 +14,7 @@ class Product extends Model
 
     public function getCartIdByProductUserId($productId, $userId)
     {
+        $id = null;
         $carts = DB::table('carts')
             ->join('cart_items', 'carts.id', '=', 'cart_items.cart_id')
             ->join('products', 'cart_items.product_id', '=', 'products.id')
@@ -25,7 +26,13 @@ class Product extends Model
             $id = $cart->id;
         }
 
-        return $id;
+        if ($id !== null) {
+            return $id;
+        } else {
+            return error_log('Id does not exist.');
+        }
+
+
     }
 
     public function getCartByProductId($id)
